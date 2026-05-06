@@ -486,7 +486,7 @@ input[type=datetime-local].field-filled:focus,textarea.field-filled:focus{
         <label class="field-label">Kabupaten/Kota <span class="req">*</span></label>
         <select id="q2_kabupaten" onchange="loadKecamatan(this.value)">
           <option value="">-- Pilih Kabupaten/Kota --</option>
-          <option value="5108">KAB. BULELENG</option>
+          <option value="5105">KAB. BULELENG</option>
         </select>
       </div>
     </div>
@@ -3367,14 +3367,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const selProv = document.getElementById('q1_provinsi');
   const selKab  = document.getElementById('q2_kabupaten');
   selProv.value = '51';
-  selKab.value  = '5108';
+  selKab.value  = '5105';
   const inpProv = document.getElementById('q1_provinsi_inp');
   const inpKab  = document.getElementById('q2_kabupaten_inp');
   if (inpProv) { inpProv.value = 'BALI'; inpProv.classList.add('has-value'); }
   if (inpKab)  { inpKab.value  = 'KAB. BULELENG'; inpKab.classList.add('has-value'); }
 
   // Auto-load kecamatan list for Buleleng on open
-  loadKecamatan('5108');
+  loadKecamatan('5105');
 
   // Load provinsi for Kantor Pusat (Q11e)
   loadProvinsi();
