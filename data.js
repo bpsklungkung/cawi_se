@@ -2,107 +2,276 @@
 // Kecamatan & Kelurahan/Desa Kabupaten Buleleng + KBLI 2025
 
 const STATIC_KECAMATAN = {
-  '5108': [
-    {kode:'510801', nama:'GEROKGAK'},
-    {kode:'510802', nama:'SERIRIT'},
-    {kode:'510803', nama:'BUSUNGBIU'},
-    {kode:'510804', nama:'BANJAR'},
-    {kode:'510805', nama:'SUKASADA'},
-    {kode:'510806', nama:'BULELENG'},
-    {kode:'510807', nama:'SAWAN'},
-    {kode:'510808', nama:'KUBUTAMBAHAN'},
-    {kode:'510809', nama:'TEJAKULA'},
+  '5105': [
+     {
+       "kode": 5105010,
+       "nama": "NUSAPENIDA"
+     },
+     {
+       "kode": 5105020,
+       "nama": "BANJARANGKAN"
+     },
+     {
+       "kode": 5105030,
+       "nama": "KLUNGKUNG"
+     },
+     {
+       "kode": 5105040,
+       "nama": "DAWAN"
+     }
+    
   ]
 };
 
 const STATIC_KELURAHAN = {
-  '510801': [
-    {kode:'5108012001',nama:'BANYUPOH'},{kode:'5108012002',nama:'BATU AMPAR'},
-    {kode:'5108012003',nama:'CELUKAN BAWANG'},{kode:'5108012004',nama:'GEROKGAK'},
-    {kode:'5108012005',nama:'MUSI'},{kode:'5108012006',nama:'PATAS'},
-    {kode:'5108012007',nama:'PEJARAKAN'},{kode:'5108012008',nama:'PEMUTERAN'},
-    {kode:'5108012009',nama:'PENGULON'},{kode:'5108012010',nama:'PENYABANGAN'},
-    {kode:'5108012011',nama:'SANGGALANGIT'},{kode:'5108012012',nama:'SUMBER KLAMPOK'},
-    {kode:'5108012013',nama:'SUMBERKIMA'},{kode:'5108012014',nama:'TINGA-TINGA'},
+  '5105010': [
+     {
+       "kode": 5105010001,
+       "nama": "SAKTI"
+     },
+     {
+       "kode": 5105010002,
+       "nama": "BUNGA MEKAR"
+     },
+     {
+       "kode": 5105010003,
+       "nama": "BATUMADEG"
+     },
+     {
+       "kode": 5105010004,
+       "nama": "KLUMPU"
+     },
+     {
+       "kode": 5105010005,
+       "nama": "BATUKANDIK"
+     },
+     {
+       "kode": 5105010006,
+       "nama": "SEKARTAJI"
+     },
+     {
+       "kode": 5105010007,
+       "nama": "TANGLAD"
+     },
+     {
+       "kode": 5105010008,
+       "nama": "PEJUKUTAN"
+     },
+     {
+       "kode": 5105010009,
+       "nama": "SUANA"
+     },
+     {
+       "kode": 5105010010,
+       "nama": "BATUNUNGGUL"
+     },
+     {
+       "kode": 5105010011,
+       "nama": "KUTAMPI"
+     },
+     {
+       "kode": 5105010012,
+       "nama": "KUTAMPI KALER"
+     },
+     {
+       "kode": 5105010013,
+       "nama": "PED"
+     },
+     {
+       "kode": 5105010014,
+       "nama": "KAMPUNG TOYAPAKEH"
+     },
+     {
+       "kode": 5105010015,
+       "nama": "LEMBONGAN"
+     },
+     {
+       "kode": 5105010016,
+       "nama": "JUNGUTBATU"
+     },
+
   ],
-  '510802': [
-    {kode:'5108022001',nama:'ANTURAN'},{kode:'5108022002',nama:'BANJARASEM'},
-    {kode:'5108022003',nama:'BESTALA'},{kode:'5108022004',nama:'BUBUNAN'},
-    {kode:'5108022005',nama:'JENGGALA'},{kode:'5108022006',nama:'JOANYAR'},
-    {kode:'5108022007',nama:'KALISADA'},{kode:'5108022008',nama:'KALIANGET'},
-    {kode:'5108022009',nama:'LABA SARI'},{kode:'5108022010',nama:'LOKAPAKSA'},
-    {kode:'5108022011',nama:'MAYONG'},{kode:'5108022012',nama:'PANGKUNG PARUK'},
-    {kode:'5108022013',nama:'PATEMON'},{kode:'5108022014',nama:'PENGASTULAN'},
-    {kode:'5108022015',nama:'RINGDIKIT'},{kode:'5108022016',nama:'SANDA'},
-    {kode:'5108021001',nama:'SERIRIT'},{kode:'5108022017',nama:'SULANYAH'},
-    {kode:'5108022018',nama:'TANGGUWISIA'},{kode:'5108022019',nama:'TEGALLINGGAH'},
-    {kode:'5108022020',nama:'UMEANYAR'},
+  '5105020': [
+     {
+       "kode": 5105020001,
+       "nama": "NEGARI"
+     },
+     {
+       "kode": 5105020002,
+       "nama": "TAKMUNG"
+     },
+     {
+       "kode": 5105020003,
+       "nama": "BANJARANGKAN"
+     },
+     {
+       "kode": 5105020004,
+       "nama": "TUSAN"
+     },
+     {
+       "kode": 5105020005,
+       "nama": "BAKAS"
+     },
+     {
+       "kode": 5105020006,
+       "nama": "GETAKAN"
+     },
+     {
+       "kode": 5105020007,
+       "nama": "TIHINGAN"
+     },
+     {
+       "kode": 5105020008,
+       "nama": "AAN"
+     },
+     {
+       "kode": 5105020009,
+       "nama": "NYALIAN"
+     },
+     {
+       "kode": 5105020010,
+       "nama": "BUNGBUNGAN"
+     },
+     {
+       "kode": 5105020011,
+       "nama": "TIMUHUN"
+     },
+     {
+       "kode": 5105020012,
+       "nama": "NYANGLAN"
+     },
+     {
+       "kode": 5105020013,
+       "nama": "TOHPATI"
+     },
+
   ],
-  '510803': [
-    {kode:'5108032001',nama:'BENGKEL'},{kode:'5108032002',nama:'BUSUNGBIU'},
-    {kode:'5108032003',nama:'KEKERAN'},{kode:'5108032004',nama:'PELAPUAN'},
-    {kode:'5108032005',nama:'PUCAKSARI'},{kode:'5108032006',nama:'SEPANG'},
-    {kode:'5108032007',nama:'SUBUK'},{kode:'5108032008',nama:'TELAGA'},
-    {kode:'5108032009',nama:'TINGGARSARI'},{kode:'5108032010',nama:'TISTA'},
-    {kode:'5108032011',nama:'TITAB'},{kode:'5108032012',nama:'UMAJALAR'},
+  '5105030': [
+     {
+       "kode": 5105030001,
+       "nama": "SATRA"
+     },
+     {
+       "kode": 5105030002,
+       "nama": "TOJAN"
+     },
+     {
+       "kode": 5105030003,
+       "nama": "GELGEL"
+     },
+     {
+       "kode": 5105030004,
+       "nama": "KAMPUNG GELGEL"
+     },
+     {
+       "kode": 5105030005,
+       "nama": "JUMPAI"
+     },
+     {
+       "kode": 5105030006,
+       "nama": "TANGKAS"
+     },
+     {
+       "kode": 5105030007,
+       "nama": "KAMASAN"
+     },
+     {
+       "kode": 5105030008,
+       "nama": "SEMARAPURA KLOD"
+     },
+     {
+       "kode": 5105030009,
+       "nama": "SEMARAPURA KLOD KANGIN"
+     },
+     {
+       "kode": 5105030010,
+       "nama": "SEMARAPURA KANGIN"
+     },
+     {
+       "kode": 5105030011,
+       "nama": "SEMARAPURA TENGAH"
+     },
+     {
+       "kode": 5105030012,
+       "nama": "SEMARAPURA KAUH"
+     },
+     {
+       "kode": 5105030013,
+       "nama": "SEMARAPURA KAJA"
+     },
+     {
+       "kode": 5105030014,
+       "nama": "AKAH"
+     },
+     {
+       "kode": 5105030015,
+       "nama": "MANDUANG"
+     },
+     {
+       "kode": 5105030016,
+       "nama": "SELAT"
+     },
+     {
+       "kode": 5105030017,
+       "nama": "TEGAK"
+     },
+     {
+       "kode": 5105030018,
+       "nama": "SELISIHAN"
+     },
+ 
   ],
-  '510804': [
-    {kode:'5108042001',nama:'BANJAR'},{kode:'5108042002',nama:'BANJAR TEGEHA'},
-    {kode:'5108042003',nama:'BANYUSERI'},{kode:'5108042004',nama:'CEMPAGA'},
-    {kode:'5108042005',nama:'DENCARIK'},{kode:'5108042006',nama:'GESING'},
-    {kode:'5108042007',nama:'GOBLEG'},{kode:'5108042008',nama:'KAYU PUTIH'},
-    {kode:'5108042009',nama:'MUNDUK'},{kode:'5108042010',nama:'PEDAWA'},
-    {kode:'5108042011',nama:'SIDETAPA'},{kode:'5108042012',nama:'TAMPEKAN'},
-    {kode:'5108042013',nama:'TEMUKUS'},{kode:'5108042014',nama:'TIGAWASA'},
+  '5105040': [
+    {
+       "kode": 5105040001,
+       "nama": "KUSAMBA"
+     },
+     {
+       "kode": 5105040002,
+       "nama": "KAMPUNG KUSAMBA"
+     },
+     {
+       "kode": 5105040003,
+       "nama": "PESINGGAHAN"
+     },
+     {
+       "kode": 5105040004,
+       "nama": "DAWAN KLOD"
+     },
+     {
+       "kode": 5105040005,
+       "nama": "GUNAKSA"
+     },
+     {
+       "kode": 5105040006,
+       "nama": "SAMPALAN KLOD"
+     },
+     {
+       "kode": 5105040007,
+       "nama": "SAMPALAN TENGAH"
+     },
+     {
+       "kode": 5105040008,
+       "nama": "SULANG"
+     },
+     {
+       "kode": 5105040009,
+       "nama": "PAKSEBALI"
+     },
+     {
+       "kode": 5105040010,
+       "nama": "DAWAN KALER"
+     },
+     {
+       "kode": 5105040011,
+       "nama": "PIKAT"
+     },
+     {
+       "kode": 5105040012,
+       "nama": "BESAN"
+     }
   ],
-  '510805': [
-    {kode:'5108052001',nama:'AMBENGAN'},{kode:'5108052002',nama:'GITGIT'},
-    {kode:'5108052003',nama:'KAYUPUTIH'},{kode:'5108052004',nama:'LILIGUNDI'},
-    {kode:'5108052005',nama:'NAGASEPAHA'},{kode:'5108052006',nama:'PADANG BULIA'},
-    {kode:'5108052007',nama:'PANCASARI'},{kode:'5108052008',nama:'PANJI'},
-    {kode:'5108052009',nama:'PANJI ANOM'},{kode:'5108052010',nama:'PEGAYAMAN'},
-    {kode:'5108052011',nama:'SAMBANGAN'},{kode:'5108052012',nama:'SELAT'},
-    {kode:'5108052013',nama:'SUKASADA'},{kode:'5108052014',nama:'TEGALLINGGAH'},
-    {kode:'5108052015',nama:'WANAGIRI'},
-  ],
-  '510806': [
-    {kode:'5108062001',nama:'ALASANGKER'},{kode:'5108061001',nama:'ASTINA'},
-    {kode:'5108061002',nama:'BALE AGUNG'},{kode:'5108061003',nama:'BANJAR JAWA'},
-    {kode:'5108061004',nama:'BANYUASRI'},{kode:'5108061005',nama:'BANYUNING'},
-    {kode:'5108061006',nama:'BERATAN'},{kode:'5108061007',nama:'GALUNGAN'},
-    {kode:'5108061008',nama:'JINENGDALEM'},{kode:'5108062002',nama:'KALIASEM'},
-    {kode:'5108061009',nama:'KALIUNTU'},{kode:'5108061010',nama:'KAMPUNG BALI'},
-    {kode:'5108061011',nama:'KAMPUNG BUGIS'},{kode:'5108061012',nama:'KAMPUNG SINGARAJA'},
-    {kode:'5108061013',nama:'KENDRAN'},{kode:'5108062003',nama:'KALIBUKBUK'},
-    {kode:'5108061014',nama:'KEROBOKAN'},{kode:'5108061015',nama:'LILIGUNDI'},
-    {kode:'5108061016',nama:'PAKET AGUNG'},{kode:'5108061017',nama:'PENARUKAN'},
-    {kode:'5108062004',nama:'PEMARON'},{kode:'5108061018',nama:'PENGLATAN'},
-    {kode:'5108062005',nama:'TUKAD MUNGGA'},
-  ],
-  '510807': [
-    {kode:'5108072001',nama:'BANYUATIS'},{kode:'5108072002',nama:'BEBETIN'},
-    {kode:'5108072003',nama:'BUNGKULAN'},{kode:'5108072004',nama:'GALUNGAN'},
-    {kode:'5108072005',nama:'GIRI MAS'},{kode:'5108072006',nama:'KEROBOKAN'},
-    {kode:'5108072007',nama:'LEMUKIH'},{kode:'5108072008',nama:'MENYALI'},
-    {kode:'5108072009',nama:'SANGSIT'},{kode:'5108072010',nama:'SAWAN'},
-    {kode:'5108072011',nama:'SEKUMPUL'},{kode:'5108072012',nama:'SUDAJI'},
-    {kode:'5108072013',nama:'SUWUG'},{kode:'5108072014',nama:'TIRTA SARI'},
-  ],
-  '510808': [
-    {kode:'5108082001',nama:'BAKTI SERAGA'},{kode:'5108082002',nama:'BENGKALA'},
-    {kode:'5108082003',nama:'BILA'},{kode:'5108082004',nama:'BONTIHING'},
-    {kode:'5108082005',nama:'BULIAN'},{kode:'5108082006',nama:'DEPEHA'},
-    {kode:'5108082007',nama:'KUBUTAMBAHAN'},{kode:'5108082008',nama:'MENGENING'},
-    {kode:'5108082009',nama:'PACUNG'},{kode:'5108082010',nama:'TAJUN'},
-    {kode:'5108082011',nama:'TAMBLANG'},{kode:'5108082012',nama:'TUNJUNG'},
-  ],
-  '510809': [
-    {kode:'5108092001',nama:'BONDALEM'},{kode:'5108092002',nama:'JULAH'},
-    {kode:'5108092003',nama:'LES'},{kode:'5108092004',nama:'PACUNG'},
-    {kode:'5108092005',nama:'PENUKTUKAN'},{kode:'5108092006',nama:'SAMBIRENTENG'},
-    {kode:'5108092007',nama:'SEMBIRAN'},{kode:'5108092008',nama:'TEMBOK'},
-    {kode:'5108092009',nama:'TEJAKULA'},
-  ],
+  
 };
 
 const KBLI_DATA = [
