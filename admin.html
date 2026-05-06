@@ -844,41 +844,156 @@ function showSheetAlert(id, msg) {
 // ══════════════════════════════════════════════
 const PEGAWAI_KEY = 'cawi_pegawai_override';
 const DEFAULT_PEGAWAI = [
-  {"nama":"Gede Iwan Santika SST, M.M.","nip":"197807072002121002","jabatan":"Kepala BPS Kabupaten Buleleng"},
-  {"nama":"I Ketut Ariasa, SE","nip":"197306041994011001","jabatan":"Kepala Subbagian Umum"},
-  {"nama":"I Komang Ari Wijaya, SST, M.Agb","nip":"198611152009021002","jabatan":"Statistisi Ahli Madya"},
-  {"nama":"Ketut Ksama Putra SST., M.Si.","nip":"199004042013111001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Alit Mahendra, SST","nip":"199204222014121001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Nyoman Subaktiyasa, SE","nip":"197106261994011001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Ni Made Egy Wira Astuti, SST","nip":"199203302014122001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Ni Made Pratiwi Pendit, S.Si., M.Si","nip":"198609142009022007","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Raden Agus Setiyo Purnawan, SE","nip":"197008251994011001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"I Made Oka Suarjaya, SST, M.SE.","nip":"198809162010121001","jabatan":"Statistisi Ahli Muda"},
-  {"nama":"Garinca Firgiana Santoso, S.Tr.Stat.","nip":"199902162022012001","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"I Made Kariasa SST, M.SE.","nip":"199103292014121001","jabatan":"Pranata Komputer Ahli Muda"},
-  {"nama":"Rizq Taufiq Bahtiar Razendrya, S.Tr.Stat.","nip":"200104132023021003","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Kadek Suradnyana Wisnawa, SST","nip":"199405202017011001","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Amalia Susanti, S.Tr.Stat.","nip":"199901112022012001","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Ni Luh Putu Yayang Septia Ningsih, S.Tr.Stat.","nip":"199812302022012001","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Novia Putri Lestari, S.Tr.Stat.","nip":"199811242022012002","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Kharisma Pandu Utama, S.Tr.Stat.","nip":"200110172023101002","jabatan":"Statistisi Ahli Pertama"},
-  {"nama":"Sita Dian Maretna, S.Tr.Stat.","nip":"200003302023022001","jabatan":"Pranata Komputer Ahli Pertama"},
-  {"nama":"Erik Rihendri Candra Adifa, S.Tr.Stat.","nip":"199905202023021001","jabatan":"Pranata Komputer Ahli Pertama"},
-  {"nama":"Nyoman Pasek Susena, SE","nip":"198612232011011006","jabatan":"Pranata Komputer Ahli Pertama"},
-  {"nama":"I Made Resdana","nip":"196807172006041017","jabatan":"Statistisi Mahir"},
-  {"nama":"Made Sunika","nip":"197204012007101001","jabatan":"Statistisi Mahir"},
-  {"nama":"I Gede Setya Budhi","nip":"197907052006041005","jabatan":"Pranata Keuangan APBN Terampil"},
-  {"nama":"I Nyoman Samiada","nip":"196902011989021001","jabatan":"Fungsional Umum"},
-  {"nama":"Nyoman Redita","nip":"197009302006041007","jabatan":"Statistisi Mahir"},
-  {"nama":"I Putu Wardana Gelgel","nip":"197104072009011004","jabatan":"Fungsional Umum"},
-  {"nama":"Fadly Muhamad Akbar, S.Tr.Stat.","nip":"200103202024121004","jabatan":"Fungsional Umum / Statistisi Ahli Pertama"},
-  {"nama":"Kasah Aisyah, A.Md.Stat.","nip":"200105212024122001","jabatan":"Fungsional Umum / Statistisi Pelaksana"},
-  {"nama":"I Ketut Edi Mudarta","nip":"198307302025211036","jabatan":"PPPK - Operator Layanan Operasional"},
-  {"nama":"I Made Wiradana","nip":"198507072025211071","jabatan":"PPPK - Operator Layanan Operasional"},
-  {"nama":"Ketut Swadana","nip":"196911272025211007","jabatan":"PPPK - Operator Layanan Operasional"},
-  {"nama":"Putri Octaviana","nip":"199510142025212054","jabatan":"PPPK - Operator Layanan Operasional"},
-  {"nama":"Ni Nengah Sekar","nip":"198507172025212050","jabatan":"PPPK - Pengelola Umum Operasional"},
-  {"nama":"Muhammad Zulkarnain, S.Tr.Stat","nip":"199901152023021001","jabatan":"Pranata Komputer Ahli Pertama"}
+ {
+   "nama": "Anak Agung Gede Dirga Kardita, SST, M.Si.",
+   "nip": "197901301999031003",
+   "jabatan": "Kepala BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Nyoman Kartika, SE",
+   "nip": "196805132002121003",
+   "jabatan": "Fungsional Umum BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Nengah Suparta",
+   "nip": "197505292009111001",
+   "jabatan": "Fungsional Umum BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Wayan Sutama",
+   "nip": "197712192009111001",
+   "jabatan": "Fungsional Umum BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Gede Made Suwartana, SST., M.Si",
+   "nip": "198012212003121004",
+   "jabatan": "Statistisi Ahli Madya BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Ni Made Budiriani, SE",
+   "nip": "197303151994032001",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Wayan Pariarta, SST",
+   "nip": "197405091996031001",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Putu Indri Widyani, SST, M.Si",
+   "nip": "198504012008012002",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Gede Rosma Adi Wijaya, SST",
+   "nip": "198506202008011003",
+   "jabatan": "Pranata Komputer Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Made Sukma Hartania, SST",
+   "nip": "198611072009021002",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Wayan Permana Saputra, SST",
+   "nip": "199303082014121001",
+   "jabatan": "Pranata Komputer Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Putu Eka Suryawan, SST",
+   "nip": "198905182012111001",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Wayan Budi Okta Kusuma, S.Tr.Stat.",
+   "nip": "199410312019011003",
+   "jabatan": "Statistisi Ahli Muda BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Made Sujarwa",
+   "nip": "197301151994011001",
+   "jabatan": "Statistisi Mahir BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Gusti Agung Dwi Purnami, S.Tr.Stat.",
+   "nip": "199707202019122001",
+   "jabatan": "Statistisi Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Amelia Syahadati, S.Tr.Stat.",
+   "nip": "199904182022012001",
+   "jabatan": "Statistisi Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Anggita Aufa Fakhri Zaidan, S.Tr.Stat.",
+   "nip": "199911032022011003",
+   "jabatan": "Pranata Komputer Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Herlinda Febrianti Cesarie, S.Tr.Stat.",
+   "nip": "199902172022012002",
+   "jabatan": "Statistisi Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Monica Nadia Ratri, S.Tr.Stat.",
+   "nip": "199809192023022001",
+   "jabatan": "Statistisi Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Anak Agung Ketut Agung Dharma Putra, S.Tr.Stat.",
+   "nip": "200101302023101001",
+   "jabatan": "Statistisi Ahli Pertama BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Avelia Deavy Putri Primadani, S.Tr.Stat",
+   "nip": "200107052024122003",
+   "jabatan": "Fungsional Umum BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "Komang Bajra Adnyana, A.Md",
+   "nip": "199306272024211007",
+   "jabatan": "Pranata Komputer Terampil BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Gede Arya Agus Yogantara, SST, M.Si",
+   "nip": "198808162010121008",
+   "jabatan": "Kepala Subbagian Umum"
+ },
+ {
+   "nama": "I Wayan Sudiasa",
+   "nip": "197810282006041025",
+   "jabatan": "Fungsional Umum Subbagian Umum"
+ },
+ {
+   "nama": "Halim Nur Jamaluddin, S.Tr.Stat.",
+   "nip": "200303302026031002",
+   "jabatan": "Staf BPS Kabupaten/Kota"
+ },
+ {
+   "nama": "I Kadek Suar",
+   "nip": "197809192025211030",
+   "jabatan": "Staf Subbagian Umum"
+ },
+ {
+   "nama": "I Wayan Wija",
+   "nip": "198003022025211036",
+   "jabatan": "Staf Subbagian Umum"
+ },
+ {
+   "nama": "Ni Kadek Suci Mariani",
+   "nip": "199502132025212035",
+   "jabatan": "Staf Subbagian Umum"
+ },
+ {
+   "nama": "Toni Apriawan",
+   "nip": "200004092025211014",
+   "jabatan": "Staf Subbagian Umum"
+ },
+ {
+   "nama": "I Made Putra Astawa, SE",
+   "nip": "196710061990031001",
+   "jabatan": "Kepala BPS Kabupaten/Kota"
+ }
 ];
 
 let pegawaiList = [];
